@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHub</title>
+
+    <!--Boxicons-link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Bootstrap-css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="p-3 mb-2 bg-danger text-white">
+
+<!-- bootstrap-js-link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- header-section -->
+    <header>
+      <!-- nav-bar -->
+       <nav class="navbar navbar-expand-lg bg-light data-bs-theme=dark border border-dark border-2 rounded">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class='bx bx-camera-movie'></i><b>MoviesHub</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Genre</b>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">ThrillerDrama</a></li>
+                  <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                  <li><a class="dropdown-item" href="#">Anime</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </li>
+          </ul>
+          
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control ms-auto me-2" type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn btn-outline-success rounded-full" type="submit"><i class='bx bx-search'></i></button>
+           </form>
+
+         <div>
+          <button class="btn btn-danger ms-2" type=""><b>use app</b></button>
+         </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+      
+    <!-- main-body -->
+    <main>
+
+      <h3 class="text-light ms-5 my-3 style=width:150px;">Upcoming Movies...</h3>
+      
+   <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide mt-3 mb-3 mx-5 border border-light border-2 rounded">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/kraven-the-hunter.jpg" class="d-block w-100" alt="img-kraven-the-hunter">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/nimona.jpg" class="d-block w-100" alt="img-nimona">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/next-goal-wins-banner-images.webp" class="d-block w-100" alt="img-next-win-goal">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+       
+    <div class="flex item-center justifiy-between">
+
+      <div class="container p-4 text-center text-dark fs-3 text-primary bg-primary-subtle border border-dark rounded-3">
+      Subscribe now and start streaming for ₹499/6 months.
+     </div>
+       <div>
+         <img src="./assets/images/laeader-border-movei-reel.jpeg" alt="popcorn">
+       </div> 
+    </div> 
+
+     <!-- Genre--Section -->
+
+    <!-- card-thrillerdrama -->
+    <h3 class="text-light fs-1 ms-5 my-4">ThrillerDrama</h3>
+    <div class="container">
+      <div class="row gy-3">
+         <div class="col-md-4">
+           <div class="card">
+             <img src="assets/images/Thrillerdrama/Happiness.jpeg" class="card-img-top p-1 rounded" alt="img-happines">
+             <div class="card-body">
+               <h5 class="card-title text-primary" ><b>Happiness</b></h5>
+               <p class="card-text">An apocalyptic thriller that takes place in a time in which infectious diseases have become the new normal.</p>
+               <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+               <a href="https://www.imdb.com/title/tt14979052/?ref_=fn_al_tt_3" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Thrillerdrama/the-k2.jpeg" class="card-img-top p-1 rounded" alt="img-the-k2">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><b>The K2</b></h5>
+              <p class="card-text">A highly trained special ops agent goes off the grid after being framed for murder, and is hired as a bodyguard when the powerful and influential father of a troubled girl sees his skills</p>
+              <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+              <a href="https://www.imdb.com/title/tt5966882/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+            </div>
+          </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Thrillerdrama/vincenzo.jpg" class="card-img-top p-1 rounded" alt="img-vincenzo">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><b>Vincenzo</b></h5>
+              <p class="card-text">During a visit to his motherland, a Korean-Italian mafia lawyer gives an unrivaled conglomerate a taste of its own medicine with a side of justice.</p>
+              <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+              <a href="https://www.imdb.com/title/tt13433812/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+            </div>
+          </div>
+         </div>
+     </div>
+  </div>
+    
+    <!--card-sci-fi -->
+    <h3 class="text-light fs-1 ms-5 my-4">Sci-fi</h3>
+    <div class="container">
+      <div class="row gy-3">
+         <div class="col-md-4">
+           <div class="card">
+             <img src="assets/images/Sci-fi/Inception.webp" class="card-img-top p-1 rounded" alt="img-inception">
+             <div class="card-body">
+               <h5 class="card-title text-primary" ><b>Inception</b></h5>
+               <p class="card-text">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster</p>
+               <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+               <a href="https://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Sci-fi/the 100.jpeg" class="card-img-top p-1 rounded" alt="img-the-100">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><b>The 100</b></h5>
+              <p class="card-text">Set 97 years after a nuclear war destroyed civilization, when a spaceship housing humanity's lone survivors sends 100 juvenile delinquents back to Earth, hoping to repopulate the planet.</p>
+              <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+              <a href="https://www.imdb.com/title/tt2661044/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+            </div>
+          </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Sci-fi/The-Silent-Sea.jpeg" class="card-img-top p-1 rounded" alt="img-the-silent-sea">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><b>The Silent Sea</b></h5>
+              <p class="card-text">During a perilous 24-hour mission on the moon, space explorers try to retrieve samples from an abandoned research facility steeped in classified secrets.</p>
+              <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+              <a href="https://www.imdb.com/title/tt11570202/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520silent%2520" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+            </div>
+          </div>
+         </div>
+     </div>
+  </div>
+
+  <!-- card-Anime -->
+<h3 class="text-light fs-1 ms-5 my-4">Anime</h3>
+<div class="container">
+  <div class="row gy-3">
+     <div class="col-md-4">
+       <div class="card">
+         <img src="assets/images/Anime/demon-slayer.jpg" class="card-img-top p-1 rounded" alt="img-demon-slayer">
+         <div class="card-body">
+           <h5 class="card-title text-primary"></b>Demon slayer</b></h5>
+           <p class="card-text">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</p>
+           <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+          <a href="https://www.imdb.com/title/tt9335498/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_demon" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a> 
+         </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card">
+        <img src="assets/images/Anime/Suzume.webp" class="card-img-top p-1 rounded" alt="img-suzume">
+        <div class="card-body">
+          <h5 class="card-title text-primary"><b>Suzume</b></h5>
+          <p class="card-text">A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the outer side that are releasing disasters all over in Japan.</p>
+          <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+         <a href="https://www.imdb.com/title/tt16428256/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_suzume" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a> 
+        </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card">
+        <img src="assets/images/Anime/grave-of-the-fireflies.webp" class="card-img-top p-1 rounded" alt="img-the-garve-of -firefiles">
+        <div class="card-body">
+          <h5 class="card-title text-primary"><b>The Grave Of Firefiles</b></h5>
+          <p class="card-text">A young boy and his little sister struggle to survive in Japan during World War II</p>
+          <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+         <a href="https://www.imdb.com/title/tt0095327/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520grave%2520of%2520" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+        </div>
+      </div>
+     </div>
+ </div>
+</div>
+
+
+  <!--card-fantasy-->
+  <h3 class="text-light fs-1 ms-5 my-4">Fantasy</h3>
+  <div class="container">
+    <div class="row gy-3">
+       <div class="col-md-4">
+         <div class="card">
+           <img src="assets/images/fantasy/harry-potter.jpeg" class="card-img-top p-1 rounded" alt="img-harry-potter">
+           <div class="card-body">
+             <h5 class="card-title text-primary"></b>Harry Potter and the Sorcerer's Stone</b></h5>
+             <p class="card-text">An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical worldr</p>
+             <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+             <a href="https://www.imdb.com/title/tt0241527/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_sorcers%2520stone" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+        <div class="card">
+          <img src="assets/images/fantasy/pirate of carribean.jpeg" class="card-img-top p-1 rounded" alt="img-the-pirate of carribean">
+          <div class="card-body">
+            <h5 class="card-title text-primary"><b>Pirates of the Caribbean: Dead Men Tell No Tales</b></h5>
+            <p class="card-text">Captain Jack Sparrow is pursued by old rival Captain Salazar and a crew of deadly ghosts who have escaped from the Devil's Triangle. They're determined to kill every pirate at sea...notably Jack.</p>
+            <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+            <a href="https://www.imdb.com/title/tt1790809/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_dead%2520man%2520tell%2520no%2520" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+          </div>
+        </div>
+       </div>
+       <div class="col-md-4">
+        <div class="card">
+          <img src="assets/images/fantasy/shaolin-soccer.jpg" class="card-img-top p-1 rounded" alt="img-the-shaolin-soccer">
+          <div class="card-body">
+            <h5 class="card-title text-primary"><b>The Silent Sea</b></h5>
+            <p class="card-text">During a perilous 24-hour mission on the moon, space explorers try to retrieve samples from an abandoned research facility steeped in classified secrets.</p>
+            <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+            <a href="https://www.imdb.com/title/tt11570202/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+          </div>
+        </div>
+       </div>
+   </div>
+</div>
+
+
+
+   <!--cart-Action-->
+   <h3 class="text-light fs-1 ms-5 my-4">Action</h3>
+   <div class="container">
+     <div class="row gy-3">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Action/The-Dark-Knight_Poster.jpg" class="card-img-top p-1 rounded" alt="img-the dark knight">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><b>The Dark Knight Rise</b></h5>
+              <p class="card-text">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+              <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+              <a href="https://www.imdb.com/title/tt1345836/?ref_=fn_al_tt_1" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card">
+           <img src="assets/images/Action/enter the drangan.jpg" class="card-img-top p-1 rounded" alt="img-enter the dragon">
+           <div class="card-body">
+             <h5 class="card-title text-primary"><b>Enter The Dragon</b></h5>
+             <p class="card-text">A Shaolin martial artist travels to an island fortress to spy on an opium lord - who is also a former monk from his temple - under the guise of attending a fighting tournament</p>
+             <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+             <a href="https://www.imdb.com/title/tt0070034/?ref_=nv_sr_srsg_2_tt_8_nm_0_q_enter%2520the%2520" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+           </div>
+         </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card">
+           <img src="assets/images/Action/rush-hour.jpg" class="card-img-top p-1 rounded" alt="img-rush-hour">
+           <div class="card-body">
+             <h5 class="card-title text-primary"><b>Rush Hour</b></h5>
+             <p class="card-text">A loyal and dedicated Hong Kong Inspector teams up with a reckless and loudmouthed L.A.P.D. detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.</p>
+             <a href="#" class="btn btn-dark"><i class='bx bx-heart'></i>Add</a>
+             <a href="https://www.imdb.com/title/tt0120812/?ref_=nv_sr_srsg_6_tt_5_nm_3_q_rush" target="_blank"><button type="button" class="btn btn-primary ms-2"><i class='bx bx-movie-play'>Watch Now</i></button></a>
+           </div>
+         </div>
+        </div>
+    </div>
+   </div>
+</main>
+</body>
+</html
+
+
+
